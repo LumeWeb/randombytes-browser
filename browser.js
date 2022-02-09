@@ -12,7 +12,6 @@ function oldBrowser () {
   throw new Error('Secure random number generation is not supported by this browser.\nUse Chrome, Firefox or Internet Explorer 11')
 }
 
-var Buffer = require('safe-buffer').Buffer
 var crypto = global.crypto || global.msCrypto
 
 if (crypto && crypto.getRandomValues) {
@@ -25,7 +24,7 @@ function randomBytes (size, cb) {
   // phantomjs needs to throw
   if (size > MAX_UINT32) throw new RangeError('requested too many random bytes')
 
-  var bytes = Buffer.allocUnsafe(size)
+  var bytes = new Uint32Array(size)
 
   if (size > 0) {  // getRandomValues fails on IE if size == 0
     if (size > MAX_BYTES) { // this is the max bytes crypto.getRandomValues

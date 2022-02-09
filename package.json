@@ -1,5 +1,5 @@
 {
-  "name": "randombytes",
+  "name": "@lumeweb/randombytes-browser",
   "version": "2.1.0",
   "description": "random bytes from browserify stand alone",
   "main": "index.js",
@@ -29,8 +29,5 @@
     "tap-spec": "^2.1.2",
     "tape": "^4.6.3",
     "zuul": "^3.7.2"
-  },
-  "dependencies": {
-    "safe-buffer": "^5.1.0"
   }
 }
