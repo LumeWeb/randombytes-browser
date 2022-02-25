@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:crypto-browserify/randombytes.git"
+    "url": "https://github.com/LumeWeb/randombytes-browser.git"
   },
   "keywords": [
     "crypto",
@@ -19,9 +19,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crypto-browserify/randombytes/issues"
+    "url": "https://github.com/LumeWeb/randombytes-browser/issues"
   },
-  "homepage": "https://github.com/crypto-browserify/randombytes",
+  "homepage": "https://github.com/LumeWeb/randombytes-browser",
   "browser": "browser.js",
   "devDependencies": {
     "phantomjs": "^1.9.9",
