@@ -1,6 +1,6 @@
 {
   "name": "@lumeweb/randombytes-browser",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "random bytes from browserify stand alone",
   "main": "index.js",
   "scripts": {
