@@ -12,7 +12,7 @@ function oldBrowser () {
   throw new Error('Secure random number generation is not supported by this browser.\nUse Chrome, Firefox or Internet Explorer 11')
 }
 
-var crypto = global.crypto || global.msCrypto
+var crypto = global?.crypto || global?.msCrypto || self?.crypto
 
 if (crypto && crypto.getRandomValues) {
   module.exports = randomBytes
